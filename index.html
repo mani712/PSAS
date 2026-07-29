@@ -11,6 +11,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Montserrat:wght@500;600;700&display=swap"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   <script>
@@ -560,13 +561,37 @@
     }
   </style>
 </head>
+  <style>
+    /* Smooth scrolling & basic reset */
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    /* Custom scrollbar (Webkit) */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cbd5e1;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #94a3b8;
+    }
+  </style>
 
 <body class="antialiased">
 
   <script>
     /* ===== CENTRAL IMAGE CONST - EDIT ONLY HERE ===== */
     const IMG = {
-      heroBg: 'https://z-cdn-media.chatglm.cn/files/89424964-94dd-41ac-b741-1ec1041ea41d.jpeg?auth_key=1884799140-b8d0ea4c3973421ea0ecec688662a44c-0-983c94e722ee8cc977f46e74f69ca9fd',
+      heroBg: './images/Logo.JPG',
       heroBronze: 'https://z-cdn-media.chatglm.cn/files/bbcd05c6-8787-42f2-ba01-77f0eefdb2a4.jpeg?auth_key=1884799140-143eb564f2714654b101265c763783ae-0-d85b94490d9619ff2d0f2f6cfe311e98',
       heroKid: './images/Karate Kid.JPG',
       heroKid2: './images/karate kid with talwar.JPG',
@@ -580,27 +605,15 @@
       galWorld: 'https://z-cdn-media.chatglm.cn/files/89424964-94dd-41ac-b741-1ec1041ea41d.jpeg?auth_key=1884799140-b8d0ea4c3973421ea0ecec688662a44c-0-983c94e722ee8cc977f46e74f69ca9fd',
       galBronze: 'https://z-cdn-media.chatglm.cn/files/bbcd05c6-8787-42f2-ba01-77f0eefdb2a4.jpeg?auth_key=1884799140-143eb564f2714654b101265c763783ae-0-d85b94490d9619ff2d0f2f6cfe311e98',
       galAsian: 'https://z-cdn-media.chatglm.cn/files/c1f26c31-6cb4-4793-a392-5e65bde70f73.jpeg?auth_key=1884799140-c4c7dfa1b7ce46f697d481617184543c-0-99907b5db475a3be1d5af8390b0c7cc6',
-      galTrain1: 'https://picsum.photos/seed/slt1/600/600.jpg',
-      galTrain2: 'https://picsum.photos/seed/slt2/600/600.jpg',
-      galAward1: 'https://picsum.photos/seed/sla1/600/600.jpg',
       progKids: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Pencak_Silat_Jawa_Barat.jpg/960px-Pencak_Silat_Jawa_Barat.jpg',
       progWomen: './images/woman defence.JPG',
       progElite: './images/cc athelete.JPG',
-      eventChamp: 'https://picsum.photos/seed/champ-ev/600/400.jpg',
-      eventSummer: 'https://picsum.photos/seed/summer-cp/600/400.jpg',
-      eventRef: 'https://picsum.photos/seed/ref-prog/600/400.jpg',
-      ctaBg: 'https://picsum.photos/seed/cta-ma/1920/700.jpg',
       // ORGANIZATION PROFILE NEW
       orgProfileMain: './images/shrisaratkumardas.jpg',
-      orgVision: 'https://picsum.photos/seed/org-vision-img/600/400.jpg',
-      orgMission: 'https://picsum.photos/seed/org-mission-img/600/400.jpg',
       orgGeneralSec: 'https://z-cdn-media.chatglm.cn/files/89424964-94dd-41ac-b741-1ec1041ea41d.jpeg?auth_key=1884799140-b8d0ea4c3973421ea0ecec688662a44c-0-983c94e722ee8cc977f46e74f69ca9fd',
       credStructure: './images/affliation.JPG',
       leadershipWorldAbuDhabi: './images/sarat kumar.JPG',
       artMainBanner: './images/about pancake.JPG',
-      artHeritage: 'https://picsum.photos/seed/silat-heritage-img/600/400.jpg',
-      artHolistic: 'https://picsum.photos/seed/silat-holistic-img/600/400.jpg',
-      artVersatile: 'https://picsum.photos/seed/silat-versatile-img/600/400.jpg',
       active2: './images/achiev2.JPG',
       achive1: './images/achive1.JPG',
       active3: './images/achieve3.JPG',
@@ -616,6 +629,37 @@
       cert1: './images/certificate.JPG',
       cert2: './images/our glory wall.JPG',
       cert3: './images/abudhabi Certificate.JPG',
+      carousel1: './images/carousel/c1.jpeg',
+      carousel2: './images/carousel/c2.jpeg',
+      carousel3: './images/carousel/c3.jpeg',
+      carousel4: './images/carousel/c4.JPG',
+      carousel5: './images/carousel/c5.JPG',
+      carousel6: './images/carousel/c6.jpeg',
+      districtChampionships: './images/championship/district Chanpion.jpeg',
+      international1: './images/championship/Intertional1.jpeg',
+      international2: './images/championship/Intertional2.jpeg',
+      international3: './images/championship/Intertional3.jpeg',
+      international4: './images/championship/Intertional4.jpeg',
+      international5: './images/championship/Intertional5.jpeg',
+      national1: './images/championship/national1.jpeg',
+      national2: './images/championship/national2.jpeg',
+      national3: './images/championship/national3.JPG',
+      national4: './images/championship/national4.jpeg',
+      national5: './images/championship/national5.JPG',
+      national6: './images/championship/national6.jpeg',
+      national7: './images/championship/national7.jpeg',
+      national8: './images/championship/national8.JPG',
+      national9: './images/championship/national9.jpeg',
+      national10: './images/championship/national10.jpeg',
+      national11: './images/championship/national11.jpeg',
+      national12: './images/championship/national12.jpeg',
+      state1: './images/championship/state1.jpeg',
+      state2: './images/championship/state2.JPG',
+      state3: './images/championship/state3.jpeg',
+      state4: './images/championship/state4.JPG',
+      state5: './images/championship/state5.jpeg',
+      state6: './images/championship/state6.jpeg',
+      state7: './images/championship/state7.jpeg',  
     };
   </script>
 
@@ -660,7 +704,7 @@
     </div>
   </nav>
 
-  <div id="mm" class="fixed inset-0 z-[1001] bg-dark/98 backdrop-blur-xl flex flex-col">
+  <div id="mm" class="fixed inset-0 z-[1001] bg-black flex flex-col">
     <div class="flex items-center justify-between px-5 py-4">
       <div class="font-h text-white text-xl tracking-wider">PSAS</div><button id="mc"
         class="w-9 h-9 rounded-full glass flex items-center justify-center text-white"><span class="iconify"
@@ -685,9 +729,8 @@
   <section id="hero" class="relative min-h-screen flex items-center overflow-hidden bg-dark">
     <div class="absolute inset-0 z-[2]">
       <img data-img="heroBg" alt="PSAS Hero Background showing General Secretary and team"
-        class="w-full h-full object-cover object-top opacity-25" loading="eager">
-      <div class="absolute inset-0 bg-gradient-to-r from-dark via-dark/90 to-dark/40"></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-dark via-transparent to-dark/30"></div>
+        class="h-full aspect-square mx-auto object-cover object-top opacity-25" loading="eager">
+      <div class="absolute inset-0 bg-dark/90"></div>
     </div>
     <div class="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 w-full pt-20 pb-12">
       <div class="grid lg:grid-cols-2 gap-10 items-center">
@@ -716,7 +759,7 @@
             <a href="#contact" class="btn-o">Join Now</a>
           </div>
         </div>
-        <div className="hidden lg:block relative" style="animation:slideL .9s .6s both">
+        <div class="hidden lg:block relative" style="animation:slideL .9s .6s both">
         
         <div class="w-full max-w-[360px] ml-auto">
           <div class="grid grid-cols-2 gap-3">
@@ -767,6 +810,131 @@
       </div>
     </div>
   </section>
+    <!-- ========== SECTION 1: Glory Moments / Our Achievements ========== -->
+  <section id="glory-moments" class="w-full py-16 md:py-24 bg-slate-50" aria-label="Our Achievements">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="text-center mb-12 md:mb-16">
+        <span class="inline-block text-xs font-semibold tracking-widest uppercase text-indigo-600 mb-3">Glory Moments</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">Our Achievements</h2>
+        <div class="mt-4 w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+        <p class="mt-6 text-lg text-slate-500 max-w-2xl mx-auto">Celebrating the milestones that define our journey of excellence and dedication.</p>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="relative" data-carousel>
+        <!-- Carousel Track -->
+        <div class="overflow-hidden rounded-2xl" data-carousel-track-wrapper>
+          <ul class="flex transition-transform duration-500 ease-in-out" data-carousel-track role="list">
+
+            <!-- Slide 1 -->
+            <li class="w-full flex-shrink-0" data-carousel-slide role="group" aria-label="Achievement 1 of 6">
+              <div class="relative w-full aspect-[16/9] md:aspect-[21/9]">
+                <img data-img="carousel1" alt="Students celebrating victory at the regional sports meet" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+                  <span class="inline-block bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">2024</span>
+                  <h3 class="text-xl md:text-3xl font-bold text-white mb-2">Regional Sports Meet Champions</h3>
+                  <p class="text-slate-200 text-sm md:text-base max-w-2xl">Our athletes dominated the regional sports meet, bringing home the overall championship trophy for the third consecutive year.</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Slide 2 -->
+            <li class="w-full flex-shrink-0" data-carousel-slide role="group" aria-label="Achievement 2 of 6">
+              <div class="relative w-full aspect-[16/9] md:aspect-[21/9]">
+                <img data-img="carousel2" alt="Team posing with gold medals at the state athletics championship" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+                  <span class="inline-block bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">2024</span>
+                  <h3 class="text-xl md:text-3xl font-bold text-white mb-2">State Athletics Gold Medalists</h3>
+                  <p class="text-slate-200 text-sm md:text-base max-w-2xl">A historic performance at the state level with 12 gold medals across track and field events.</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Slide 3 -->
+            <li class="w-full flex-shrink-0" data-carousel-slide role="group" aria-label="Achievement 3 of 6">
+              <div class="relative w-full aspect-[16/9] md:aspect-[21/9]">
+                <img data-img="carousel3" alt="Swimmers receiving awards at the national aquatic championship" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+                  <span class="inline-block bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">2023</span>
+                  <h3 class="text-xl md:text-3xl font-bold text-white mb-2">National Aquatic Championship Finalists</h3>
+                  <p class="text-slate-200 text-sm md:text-base max-w-2xl">Our swimmers made waves at the national level, securing podium finishes in four major events.</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Slide 4 -->
+            <li class="w-full flex-shrink-0" data-carousel-slide role="group" aria-label="Achievement 4 of 6">
+              <div class="relative w-full aspect-[16/9] md:aspect-[21/9]">
+                <img data-img="carousel4" alt="Basketball team celebrating after winning the inter-school tournament" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+                  <span class="inline-block bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">2023</span>
+                  <h3 class="text-xl md:text-3xl font-bold text-white mb-2">Inter-School Basketball Tournament Winners</h3>
+                  <p class="text-slate-200 text-sm md:text-base max-w-2xl">An undefeated run through the tournament culminating in a thrilling finals victory.</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Slide 5 -->
+            <li class="w-full flex-shrink-0" data-carousel-slide role="group" aria-label="Achievement 5 of 6">
+              <div class="relative w-full aspect-[16/9] md:aspect-[21/9]">
+                <img data-img="carousel5" alt="Young athletes at the international youth sports festival" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+                  <span class="inline-block bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">2023</span>
+                  <h3 class="text-xl md:text-3xl font-bold text-white mb-2">International Youth Sports Festival Representatives</h3>
+                  <p class="text-slate-200 text-sm md:text-base max-w-2xl">Five of our athletes represented the state at the prestigious international youth sports festival.</p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Slide 6 -->
+            <li class="w-full flex-shrink-0" data-carousel-slide role="group" aria-label="Achievement 6 of 6">
+              <div class="relative w-full aspect-[16/9] md:aspect-[21/9]">
+                <img data-img="carousel6" alt="Best sports school award ceremony" class="w-full h-full object-cover" loading="lazy">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 right-0 p-6 md:p-10">
+                  <span class="inline-block bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3">2022</span>
+                  <h3 class="text-xl md:text-3xl font-bold text-white mb-2">Best Sports School Award</h3>
+                  <p class="text-slate-200 text-sm md:text-base max-w-2xl">Recognized as the best sports-promoting school in the district for outstanding contribution to athletics.</p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Previous Button -->
+        <button type="button" data-carousel-prev class="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/90 hover:bg-white text-slate-800 hover:text-indigo-600 shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 group" aria-label="Previous achievement">
+          <svg class="w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 group-hover:-translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7"/>
+          </svg>
+        </button>
+
+        <!-- Next Button -->
+        <button type="button" data-carousel-next class="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/90 hover:bg-white text-slate-800 hover:text-indigo-600 shadow-lg hover:shadow-xl transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 group" aria-label="Next achievement">
+          <svg class="w-5 h-5 md:w-6 md:h-6 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+
+        <!-- Pagination Dots -->
+        <div class="flex items-center justify-center gap-2 mt-8" data-carousel-dots role="tablist" aria-label="Achievement slides">
+          <button type="button" class="carousel-dot w-3 h-3 rounded-full bg-indigo-600 transition-all duration-300" role="tab" aria-selected="true" aria-label="Go to achievement 1" data-carousel-dot="0"></button>
+          <button type="button" class="carousel-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300" role="tab" aria-selected="false" aria-label="Go to achievement 2" data-carousel-dot="1"></button>
+          <button type="button" class="carousel-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300" role="tab" aria-selected="false" aria-label="Go to achievement 3" data-carousel-dot="2"></button>
+          <button type="button" class="carousel-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300" role="tab" aria-selected="false" aria-label="Go to achievement 4" data-carousel-dot="3"></button>
+          <button type="button" class="carousel-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300" role="tab" aria-selected="false" aria-label="Go to achievement 5" data-carousel-dot="4"></button>
+          <button type="button" class="carousel-dot w-3 h-3 rounded-full bg-slate-300 hover:bg-slate-400 transition-all duration-300" role="tab" aria-selected="false" aria-label="Go to achievement 6" data-carousel-dot="5"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   
   <!-- ABOUT + VISION MISSION UPDATED FROM ORG PROFILE -->
   <section id="about" class="relative py-20 lg:py-28 bg-white overflow-hidden">
@@ -1293,6 +1461,940 @@
       </div>
     </div>
   </section>
+  <!-- CHAMPIONSHIPS -->
+    <section id="championships" class="w-full py-16 md:py-24 bg-gray-50" aria-label="Championships">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- ===== Subsection 1: District Championships ===== -->
+      <div class="text-center mb-16 md:mb-20">
+        <span class="inline-block text-xs font-semibold tracking-widest uppercase text-indigo-600 mb-3">Competitive Excellence</span>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">Championships</h2>
+        <div class="mt-4 w-16 h-1 bg-indigo-600 mx-auto rounded-full"></div>
+        <p class="mt-6 text-lg text-slate-500 max-w-2xl mx-auto">From local grounds to global arenas — explore our athletes' triumphs at every level of competition.</p>
+      </div>
+
+      <!-- ===== Subsection 1: District Championships ===== -->
+      <div class="mb-16 md:mb-20">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-slate-900">District championship</h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- District Card 1 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="districtChampionships" alt="District level athletics meet" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥇 Gold</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">District championship 2026<br> 🏆1st Sundargarh District Pencak Silat </h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Sector-7 Community Center, Rourkela</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>3rd May 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association of Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1"></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- District Card 2 -->
+          <!-- <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img src="https://picsum.photos/seed/district2/600/450.jpg" alt="District volleyball tournament" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <div class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥇 Gold</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">District Volleyball Tournament</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Thrissur, Kerala</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>February 10, 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>District Education Office</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">A dominant performance by our volleyball squad, going undefeated throughout the tournament to claim the title.</p>
+              <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article> -->
+
+          <!-- District Card 3 -->
+          <!-- <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img src="https://picsum.photos/seed/district3/600/450.jpg" alt="District swimming championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <div class="absolute top-3 right-3 bg-slate-400 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥈 Silver</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">District Swimming Championship</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Malappuram, Kerala</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>January 22, 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Aquatic Sports Association</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">Our swimmers secured the runner-up position with impressive personal bests in freestyle and backstroke events.</p>
+              <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article> -->
+
+          <!-- District Card 4 -->
+          <!-- <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img src="https://picsum.photos/seed/district4/600/450.jpg" alt="District kabaddi finals" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">District Kabaddi Finals</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Kozhikode, Kerala</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>December 5, 2023</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Kabaddi Association of Kerala</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">A hard-fought bronze medal in the kabaddi finals, showcasing grit and determination against tough opponents.</p>
+              <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article> -->
+
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-slate-100 mb-16 md:mb-20"></div>
+
+      <!-- ===== Subsection 2: State Championships ===== -->
+      <div class="mb-16 md:mb-20">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-slate-900">State Championships</h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- State Card 1 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="state1" alt="Kerala state track and field championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥇 Gold</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">1.4th State Championship 2021</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Bargarh, Orissa </span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>30th - 31st October 2021</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 flex flex-col gap-1 flex-1"><span>🥇 4 Gold</span><span>🥈 10 Silver</span><span>🥉 3 Bronze</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- State Card 2 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="state2" alt="State level basketball championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥇 Gold</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">5th Odisha State Pencak Silat Championship 2022</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Jharsuguda, Odisha</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>8th - 9th October 2022</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 flex flex-col gap-1 flex-1"><span>🥇 20 Gold</span><span>🥈 10 Silver</span><span>🥉 18 Bronze</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- State Card 3 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="state3" alt="State badminton tournament" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-slate-400 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥈 Silver</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">State Championship 2023</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Barbil, Keonjhar, Odisha</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>September 25, 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Kedujhar District Sports Pencak Silat Association</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">Sundargarh Silat Team:- 1st Runner-up 🏆</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- State Card 4 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="state4" alt="State football league" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">Senior State championship 2024</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Jharsuguda, Odisha</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>6th May 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 flex flex-col gap-1 mb-4 flex-1"><span>🥇 3 Gold</span><span>🥈 4 Silver</span><span>🥉 8 Bronze</span></p>
+              <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          
+          <!-- State Card 5 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="state5" alt="State football league" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">Senior State championship 2024</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Roulkela, Odisha</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>31st Aug - 1st Sep 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1"><span> 1st  Runner up - Khorda</span><br><span>2nd  Runner-up - Sambalpur</span><br><span>3rd  Runner- Up - Jajpur</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+               <!-- State Card 6 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="state6" alt="State football league" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">State Football League</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Buddheswari Community Centre, Bhubaneswar</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>9th to 12th May 2025</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 flex flex-col gap-1 mb-4 flex-1"><span>🥇 5 Gold</span><span>🥈 2 Silver</span><span>🥉 4 Bronze</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+              <!-- State Card 7 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="state7" alt="State football league" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">9th Odisha State Senior Pencak Silat Championship 2026-27</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Biju Patnaik Indoor Stadium in Angul</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>27th - 28th April 2025</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Odisha Pencak Silat Association</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 flex flex-col gap-1 mb-4 flex-1"><span>🥇 8 Gold</span><span>🥈 5 Silver</span><span>🥉 8 Bronze</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-slate-100 mb-16 md:mb-20"></div>
+
+      <!-- ===== Subsection 3: National Championships ===== -->
+      <div class="mb-16 md:mb-20">
+        <div class="flex items-center gap-3 mb-8">
+          <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-slate-900">National Championships</h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- National Card 1 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national1" alt="National junior athletics championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <div class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥇 Gold</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">1st junior National Championship 2021</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Rohtak, Haryana</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>2021</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Athletics Federation of India</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">🥉 Bronze-Gayatri Das</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- National Card 2 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national2" alt="National school games federation event" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-slate-400 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥈 Silver</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">National School Games Federation Event</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Ludhiana, Punjab</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>11th to 14th March 2022</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>School Games Federation of India</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">Team Coach- Jitendra Kumar</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- National Card 3 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national3" alt="National table tennis championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥇 Gold</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">2Nd National Championship 2022</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Sher-E-Kashmir Indoor Sports Complex Srinagar, J&K</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>21st - 24th October 2022</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Table Tennis Federation of India</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">🥉 Bronze-Miss Priyambada Pradhan</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- National Card 4 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national4" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">2nd Junior National Championship 2023</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Patliputra Indoor Stadium, Patna, Bihar</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>24th to 27th November 2023</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Indian Yoga Association</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex flex-col gap-1 flex-1"><span>🥈 Silver-Aditya Jena</span><span>🥈 Silver-Chandrasekhar</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+           <!-- National Card 5 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national5" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">3rd Senior National Championship 2024</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>KIIT University, Patia, Bhubaneswar</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>10th - 13th June 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Association Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex flex-col gap-1 flex-1"><span>🥇 Gold-Kajal Roy Choudhury</span><span>🥈 Silver-Santosh Bhuyan</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+           <!-- National Card 6 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national6" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">3rd Junior National Championship 2024</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Srinaga, Kashmir</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>16th to 18th November</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex flex-col gap-1 flex-1"><span>🥇 2 Gold-Gayatri Das & Sneha Samantaray</span><span>🥈 Silver-Ananya Behera</span><span>🥉 Bronze-Nitisha Barik</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+           <!-- National Card 7 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national7" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">4th junior national Championship 2025</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Koppal, Karnataka</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>26th–28th September 2025</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Association of Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 flex flex-col gap-1 flex-1"><span>🥇 8 Gold</span><span>🥈 4 Silver</span><span>🥉 2 Bronze</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+             <!-- National Card 8 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national8" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">All India National championship 2026</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Haridwar, Uttarakhand</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>29th–31st January 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association of Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 flex flex-col gap-1 flex-1"><span>🥇🥈🥉 (1 Gold, 1 Silver, 2 Bronze)-Sneha Samantray</span><span>🥉 3 Bronze-Gayatri Das, Nikhil Barik and Pintu Verma</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+               <!-- National Card 9 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national9" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">National Khelo India 2026</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>(SAI) Training Center, NEHU Campus, Shillong</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>26th–27th March 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association of Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">🥉 1 Bronze-Gaytri Das</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+                <!-- National Card 10 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national10" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">National Women’s Junior Khelo India 2026</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Yug Purush Sports Complex, Anand, Gujrat</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>31st March - 1st April 2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association of Sundargarh</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 flex flex-col gap-1 mb-4 flex-1">  
+                            <span>🥇 (1 Gold)-P. Gangotri</span>
+                            <span>🥈🥉 (2 Silver, 1 Bronze)-Sneha Samantaray</span>
+                            <span>🥈🥉 (1 Silver,1 Bronze)-Ananya Behera</span></p>
+              <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+                    <!-- National Card 11 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national11" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">Junior National Championship 2026</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Nashik Maharashtra</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>2026</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Pencak Silat Association Sundargarh with Odisha Team</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">6 Players going to participate in the Senior National Pencak Silat Championship-2026</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+                          <!-- National Card 12 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="national12" alt="National yoga championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">Senior National Championship 2026-2027</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Shillong Meghalaya</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>April 3, 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Silat Association Sundargarh with Odisha Team</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">7 Players going to participate in the Senior National Pencak Silat Championship-2026</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-slate-100 mb-16 md:mb-20"></div>
+
+      <!-- ===== Subsection 4: International Championships ===== -->
+      <div>
+        <div class="flex items-center gap-3 mb-8">
+          <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-indigo-100 text-indigo-600">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+            </svg>
+          </div>
+          <h3 class="text-2xl md:text-3xl font-bold text-slate-900">International Championships</h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+          <!-- International Card 1 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="international1" alt="Asian youth athletics championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥇 Gold</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">6th Senior Asian Pencak Silat Championship -2022</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Srinagar, J&K</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>11th - 17th October 2022</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Sher-E-Kashmir Indoor Sports Complex</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">🥉 Bronze</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- International Card 2 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="international2" alt="SAFF youth football tournament" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-slate-400 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥈 Silver</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">SAFF Youth Football Tournament</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Abu-Dhabi, Dubai</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>18th December to 22th December 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>South Asian Football Federation</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">🥉 Bronze</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- International Card 3 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="international3" alt="World school badminton championship" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-amber-700 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">🥉 Bronze</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">International world championship 2024 senior and junio</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Abu Dhab, Dubai</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>18th to 22nd December 2024</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>International School Sport Federation</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex flex-col gap-1 flex-1"><span>🥇 Gold-Vidhit Gupta</span><span>🥈 silver-Sharat Dash</span><span>🥉 Gold-Anish Sharma</span></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          <!-- International Card 4 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="international4" alt="International youth sports exchange program" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <!-- <div class="absolute top-3 right-3 bg-emerald-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">4th Place</div> -->
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">3rd Junior Asian Championship 2025</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Sher-I-Kashmir indoor sports complex, Srinagar</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>25th to 30th September</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Japan Sports Agency</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">🥉 2 Bronze</p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+          
+          <!-- International Card 4 -->
+          <article class="championship-card group flex flex-col bg-white rounded-2xl border border-slate-100 shadow-sm hover:shadow-xl hover:border-indigo-100 transition-all duration-500 overflow-hidden">
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img data-img="international5" alt="International youth sports exchange program" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
+              <div class="absolute top-3 right-3 bg-emerald-500 text-white text-xs font-bold px-2.5 py-1 rounded-full shadow-md">4th Place</div>
+            </div>
+            <div class="flex flex-col flex-1 p-5">
+              <h4 class="text-lg font-bold text-slate-900 mb-2 group-hover:text-indigo-600 transition-colors duration-300">10th Senior Asian Pencak Silat Championship</h4>
+              <div class="space-y-1.5 mb-3 text-sm text-slate-500">
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  <span>Tokyo, Japan</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>15th July to 23rd July</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <svg class="w-4 h-4 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  <span>Japan Sports Agency</span>
+                </div>
+              </div>
+              <p class="text-sm text-slate-600 mb-4 flex-1">Two of the three selected athletes are from Sundargarh:<br><b>-Seshadri Pandey</b><br><b>-Nitisha Barik</b></p>
+              <!-- <a href="#" class="inline-flex items-center gap-1.5 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-200 group/link">
+                Read More
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover/link:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </a> -->
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ACHIEVEMENTS -->
   <section id="achieve" class="py-20 bg-dark relative ds">
@@ -1328,7 +2430,7 @@
           </div>        
         </div>
         <div class="rv glass rounded-2xl overflow-hidden group">
-          <div class="relative h-44 overflow-hidden"><img data-img="achive1"
+          <div class="relative h-44 overflow-hidden"><img data-img="active2"
               alt="Raja Tanty Bronze Medal National 2026" class="w-full h-full object-cover" loading="lazy"></div>
           <div class="p-5">
             <h3 class="font-sub text-white">ASMITA Pencak Silat League (Easy Zone)</h3>
@@ -1336,7 +2438,7 @@
           </div>
           </div>
           <div class="rv glass rounded-2xl overflow-hidden group">
-            <div class="relative h-44 overflow-hidden"><img data-img="active2"
+            <div class="relative h-44 overflow-hidden"><img data-img="achive1"
                 alt="Raja Tanty Bronze Medal National 2026" class="w-full h-full object-cover" loading="lazy"></div>
             <div class="p-5">
               <h3 class="font-sub text-white">9th Pencak Silat Federation Cup</h3>
@@ -1419,7 +2521,7 @@
             <div class="cert-badge">
               <div
                 class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center shadow-lg">
-                <span class="font-h text-white text-[9px] leading-none text-center">3RD<br>ASIAN</span></div>
+                <span class="font-h text-white text-[9px] leading-none text-center">20TH<br>WORLD</span></div>
             </div>
           </div>
        
@@ -1436,50 +2538,50 @@
         <h2 class="font-h text-4xl text-dark tracking-wider">PHOTO <span class="gt">GALLERY</span></h2>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3" id="gg">
-        <div class="gi relative aspect-square rounded-xl" data-c="championships" data-lb="galTeam"><img
+        <div class="gi relative aspect-square rounded-xl" data-c="championships"><img
             data-img="galTeam" alt="Sundargarh Senior Team National Championship" class="w-full h-full object-cover"
             loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Senior National Team</span>
           </div>
         </div>
-        <div class="gi relative aspect-square rounded-xl md:col-span-2 md:row-span-2" data-lb="galWorld"><img
+        <div class="gi relative aspect-square rounded-xl md:col-span-2 md:row-span-2"><img
             data-img="galWorld" alt="World Championship Silver Medal celebration" class="w-full h-full object-cover"
             loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">World Silver</span></div>
         </div>
-        <div class="gi relative aspect-square rounded-xl" data-lb="galBronze"><img data-img="galBronze"
+        <div class="gi relative aspect-square rounded-xl"><img data-img="galBronze"
             alt="Bronze Medal National Championship Raja Tanty" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Bronze National</span></div>
         </div>
-        <div class="gi relative aspect-square rounded-xl" data-lb="galAsian"><img data-img="galAsian"
+        <div class="gi relative aspect-square rounded-xl"><img data-img="galAsian"
             alt="Asian Championship Vietnam selection PSAS" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Asian Vietnam</span></div>
         </div>
-        <div class="gi relative aspect-square rounded-xl" data-lb="galAsian"><img data-img="img5"
+        <div class="gi relative aspect-square rounded-xl"><img data-img="img5"
             alt="Asian Championship Vietnam selection PSAS" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Asian Vietnam</span></div>
         </div>
-         <div class="gi relative aspect-square rounded-xl" data-lb="galAsian"><img data-img="img4"
+         <div class="gi relative aspect-square rounded-xl"><img data-img="img4"
             alt="Asian Championship Vietnam selection PSAS" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Asian Vietnam</span></div>
         </div>
-         <div class="gi relative aspect-square rounded-xl" data-lb="galAsian"><img data-img="img3"
+         <div class="gi relative aspect-square rounded-xl"><img data-img="img3"
             alt="Asian Championship Vietnam selection PSAS" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Asian Vietnam</span></div>
         </div>
-           <div class="gi relative aspect-square rounded-xl" data-lb="galAsian"><img data-img="img2"
+           <div class="gi relative aspect-square rounded-xl"><img data-img="img2"
             alt="Asian Championship Vietnam selection PSAS" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Asian Vietnam</span></div>
           </div>
-           <div class="gi relative aspect-square rounded-xl" data-lb="galAsian"><img data-img="img1"
+           <div class="gi relative aspect-square rounded-xl"><img data-img="img1"
             alt="Asian Championship Vietnam selection PSAS" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Asian Vietnam</span></div>
         </div>
-            <div class="gi relative aspect-square rounded-xl" data-lb="galAsian"><img data-img="img6"
+            <div class="gi relative aspect-square rounded-xl"><img data-img="img6"
             alt="Asian Championship Vietnam selection PSAS" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Asian Vietnam</span></div>
         </div>
-            <div class="gi relative aspect-square rounded-xl" data-lb="galAsian"><img data-img="img7"
+            <div class="gi relative aspect-square rounded-xl"><img data-img="img7"
             alt="Asian Championship Vietnam selection PSAS" class="w-full h-full object-cover" loading="lazy">
           <div class="go rounded-xl"><span class="font-sub text-white text-xs uppercase">Asian Vietnam</span></div>
         </div>
@@ -1642,6 +2744,85 @@
     document.getElementById('cf').addEventListener('submit', e => { e.preventDefault(); const m = document.getElementById('fm'); m.classList.remove('hidden'); e.target.reset(); setTimeout(() => m.classList.add('hidden'), 4000) });
     document.getElementById('nl').addEventListener('submit', e => { e.preventDefault(); e.target.reset(); alert('Subscribed!') });
     const btt = document.getElementById('btt'); window.addEventListener('scroll', () => { const s = window.scrollY; btt.style.opacity = s > 500 ? '1' : '0'; btt.style.transform = s > 500 ? 'translateY(0)' : 'translateY(1rem)' }, { passive: true }); btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  </script>
+    <!-- Vanilla JavaScript for Carousel Functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const carousel = document.querySelector('[data-carousel]');
+      if (!carousel) return;
+
+      const track = carousel.querySelector('[data-carousel-track]');
+      const slides = carousel.querySelectorAll('[data-carousel-slide]');
+      const prevBtn = carousel.querySelector('[data-carousel-prev]');
+      const nextBtn = carousel.querySelector('[data-carousel-next]');
+      const dots = carousel.querySelectorAll('[data-carousel-dot]');
+      
+      let currentIndex = 0;
+      const totalSlides = slides.length;
+      let autoPlayInterval;
+
+      // Update carousel position and active dot
+      const updateCarousel = () => {
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        dots.forEach((dot, index) => {
+          if (index === currentIndex) {
+            dot.classList.remove('bg-slate-300', 'hover:bg-slate-400');
+            dot.classList.add('bg-indigo-600');
+            dot.setAttribute('aria-selected', 'true');
+          } else {
+            dot.classList.remove('bg-indigo-600');
+            dot.classList.add('bg-slate-300', 'hover:bg-slate-400');
+            dot.setAttribute('aria-selected', 'false');
+          }
+        });
+      };
+
+      // Move to next slide
+      const nextSlide = () => {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateCarousel();
+      };
+
+      // Move to previous slide
+      const prevSlide = () => {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+      };
+
+      // Button event listeners
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoPlay();
+      });
+
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoPlay();
+      });
+
+      // Dot event listeners
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentIndex = index;
+          updateCarousel();
+          resetAutoPlay();
+        });
+      });
+
+      // Auto-play functionality
+      const startAutoPlay = () => {
+        autoPlayInterval = setInterval(nextSlide, 5000);
+      };
+
+      const resetAutoPlay = () => {
+        clearInterval(autoPlayInterval);
+        startAutoPlay();
+      };
+
+      // Initialize
+      startAutoPlay();
+    });
   </script>
 </body>
 
