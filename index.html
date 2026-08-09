@@ -2730,7 +2730,7 @@
           <h4 class="font-sub text-white text-xs uppercase tracking-[.2em] mb-4">Newsletter</h4>
           <form id="nl" class="flex gap-2"><input type="email" required placeholder="Your email"
               class="flex-1 px-3 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white text-xs"><button
-              type="submit" class="px-4 py-2.5 rounded-lg bg-secondary text-white text-xs">Send</button></form>
+              type="submit" class="px-4 py-2.5 rounded-lg bg-secondary text-white text-xs" onclick="sendWhatsApp()">Send</button></form>
         </div>
       </div>
       <div class="border-t border-white/5 pt-6 flex justify-between">
@@ -2845,6 +2845,43 @@
       startAutoPlay();
     });
   </script>
+ 
+    <script>
+function sendWhatsApp() {
+
+  const form = document.getElementById("cf");
+
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  const name = document.getElementById("name").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  const whatsappNumber = "919438587785";
+
+  const text = `*Admission Enquiry*
+
+*Name:* ${name}
+*Phone:* ${phone}
+*Email:* ${email}
+
+*Message:*
+${message || "No message provided"}`;
+
+  const whatsappURL =
+    "https://wa.me/" +
+    whatsappNumber +
+    "?text=" +
+    encodeURIComponent(text);
+
+  window.open(whatsappURL, "_blank");
+}
+</script>
+ 
 </body>
 
 </html>
